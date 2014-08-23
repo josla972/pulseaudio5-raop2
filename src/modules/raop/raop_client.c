@@ -1435,7 +1435,6 @@ int pa_raop_client_encode_sample(pa_raop_client *c, pa_memchunk *raw, pa_memchun
     int header_size;
 
     pa_assert(c);
-    pa_assert(c->fd > 0);
     pa_assert(raw);
     pa_assert(raw->memblock);
     pa_assert(raw->length > 0);
